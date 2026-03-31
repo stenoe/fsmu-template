@@ -1,6 +1,6 @@
 # Forestry Studies (Metsanduslikud Uurimused) LaTeX Class
 
-A LaTeX class designed for the journal *Forestry Studies | Metsanduslikud Uurimuses*, following the official style guidelines of the journal.
+A LaTeX class designed for the journal *Forestry Studies | Metsanduslikud Uurimused*, following the official style guidelines of the journal.
 
 ## Features
 
