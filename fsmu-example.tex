@@ -1,0 +1,100 @@
+% fsmu-example.tex
+\documentclass{forestrystudies}
+\usepackage[base]{babel}
+\usepackage{blindtext} % dummy text for the example
+\usepackage{afterpage}
+\usepackage{gensymb}
+
+% --------------------
+% Document metadata
+% --------------------
+\title{Here will be the title of the paper}
+\setFSsubtitle{Research paper}
+
+\setFSauthor{Author One\textsuperscript{1,2*}, Author Two\textsuperscript{3}, Author Three\textsuperscript{3}}
+
+\setFSaffil{
+  \textsuperscript{1}Affiliation1, University1 , zip1 place1, country1;
+  \textsuperscript{2}Affiliation2, University2 , zip2 place2, country2;
+  \textsuperscript{3}Affiliation3, University3 , zip3 place3, country3;
+  \textsuperscript{*}e-mail: CorrAuthor@whatever.mail
+}
+
+\setFScitation{\textbf{One, A., Two, A., Three, A.} 2024. Title. -- Forestry Studies | Metsanduslikud Uurimused 80, 1-19, ISSN 1406-9954. Journal homepage: \href{https://mi.emu.ee/en/forestry-studies}{https://mi.emu.ee/en/forestry-studies}  }
+
+\setFSkeywords{keyword 1, keyword 2, keyword 3.}
+
+% Running author for header
+\renewcommand{\runningauthor}{A. One \textit{et al.}}
+
+% --------------------
+% Set logo, journal info and DOI (put your logo file in same folder)
+% Replace 'visual.png' with your logo filename, e.g. 'sciendo-logo.png'
+% --------------------
+\setFSlogo{logos/logo.pdf}
+\setFSccbylogo{logos/ccby.png}
+\setFSjournalinfo{Forestry Studies | Metsanduslikud Uurimused, Vol. 80, Pages 1--19}
+\setFSdoi{10.2478/fsmu-2024-0001}
+
+\setFScopyright{\copyright 2024 by the authors. Licensee Estonian University of Life Sciences, Tartu, Estonia. This
+article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license \href{http://creativecommons.org/licenses/by/4.0/}{http://creativecommons.org/licenses/by/4.0/}.}
+
+% --------------------
+% Document body
+% Use \twocolumn[ \FSmaketitleandabstract{...} ] to typeset single-column title+abstract
+% then the rest will be two-column.
+% --------------------
+\begin{document}
+%\newgeometry{left=20mm,right=20mm,top=10mm,bottom=40mm,includehead,includefoot}
+
+\twocolumn[
+  \FSmaketitleandabstract{Here will be the abstract. \blindtext[2].}
+]
+
+% Two-column body begins here
+\section*{Introduction}
+\blindtext[2]
+\parencite{mercuri2023water} \parencite{hariSmear2005}
+\blindtext[1]
+
+% Equation
+%
+\begin{equation}
+  f(x) = \frac{\sin(x+2\pi)}{a}
+\end{equation}
+
+\section*{Material and Methods}
+\blindtext[2]
+
+% Figure that fit into one column!
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox[b][35mm][c]{0.95\linewidth}{\centering Placeholder for figure}}
+  \caption{Example figure caption. And some more text as well to check the hanging position of the caption label, number and text.}
+\end{figure}
+
+\section*{Results}
+\blindtext[3]
+
+% Figure that spans over the whole page.
+% NOTE: the "*"! That enables the break from the twocolumn environment.
+% It will be always placed on top of the following page! Therefore, for layout reasons it's needed to test at which point in the text the figure is placed.
+\begin{figure*}
+  \centering
+  \fbox{\parbox[b][35mm][c]{0.98\linewidth}{\centering Placeholder for  wide figure}}
+  \caption{Example figure caption. with a lot of text so that we can see if the caption spans all the page width. It should as well have more than just one row of text to see the effect of wrapping.}
+\end{figure*}
+
+\blindtext[2]
+
+Here we can to some \parencite{Baldocchi.gcb.12649} citations and some more \parencite{NoeSmear2015}.
+
+\blindtext[4]
+
+\section*{Discussion and Conclusion}
+\blindtext[4]
+
+% Bibliography
+\printbibliography
+
+\end{document}
