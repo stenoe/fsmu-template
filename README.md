@@ -20,7 +20,16 @@ A LaTeX class designed for the journal *Forestry Studies | Metsanduslikud Uurimu
 
 ## Compilation
 
-### Using XeLaTeX (recommended)
+### Using LuaLaTex (recommended)
+
+```bash
+xelatex filename.tex
+biber filename
+xelatex filename.tex
+xelatex filename.tex
+```
+
+### Using XeLaTeX 
 
 ```bash
 xelatex filename.tex
@@ -50,7 +59,7 @@ pdflatex filename.tex
 
 ```latex
 \setFSjournalinfo{Forestry Studies | Metsanduslikud Uurimused}
-\setFStitle{Your Paper Title}
+\title{Your Paper Title}
 \setFSsubtitle{Optional Subtitle}
 \setFSauthor{Author Name}
 \setFSaffil{Institution Name, Country}
@@ -74,7 +83,9 @@ pdflatex filename.tex
 
 ```latex
 % Set bibliography file
-\setFSbibresource{references.bib}
+% Not yet available! Currently just use the standard file:
+%    references.bib
+% \setFSbibresource{references.bib}
 
 % Use the default bibliography
 \printbibliography
@@ -84,15 +95,15 @@ pdflatex filename.tex
 \end{bibliography}
 ```
 
-### Two-Column Title Page
+### Two-Column article Title Page
 
-For articles that require the two-column title page format:
+The articles in FSMU format have a two-column layout with a single column title page format:
 
 ```latex
 \documentclass{forestrystudies}
 
 % Set metadata
-\setFStitle{Your Article Title}
+\title{Your Article Title}
 \setFSauthor{Author Name}
 \setFSaffil{Institution}
 \setFSkeywords{keywords}
@@ -101,11 +112,13 @@ For articles that require the two-column title page format:
 \begin{document}
 
 % Use the two-column title page macro
-\begin{twocolumn}
+\twocolumn[ % make one column title page
   \FSmaketitleandabstract{
     This is the abstract of your paper. It should provide a clear summary of the research question, methods, results, and conclusions.
   }
-\end{twocolumn}
+]
+
+% Here begin the twocolumn body
 
 % Main content
 \section{Introduction}
