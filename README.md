@@ -64,7 +64,7 @@ pdflatex filename.tex
 \setFSauthor{Author Name}
 \setFSaffil{Institution Name, Country}
 \setFSdoi{10.12345/forestry.2024.001}
-\setFScopyright{© 2024 Author Name. This work is licensed under CC BY 4.0.}
+\setFScopyright{\copyright 2024 Author Name. This work is licensed under CC BY 4.0.}
 \setFSkeywords{keyword1; keyword2; keyword3}
 \setFScitation{Citation information}
 ```
@@ -203,7 +203,10 @@ The class provides two page styles:
 % Set document metadata
 \title{Forest Carbon Sequestration in Managed Forests}
 \setFSsubtitle{A Long-term Analysis}
-\setFSauthor{John Doe\and Jane Smith}
+\FShypersetup 
+\newcommand{\orcidA}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} 
+\newcommand{\orcidB}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} 
+\setFSauthor{John Doe\orcidA \and Jane Smith\orcidB}
 \setFSaffil{Department of Forest Science, University of Life Sciences}
 \setFSkeywords{carbon sequestration; forest management; climate change; sustainable forestry}
 \setFSdoi{10.12345/forestry.2024.015}
