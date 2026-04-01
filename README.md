@@ -77,7 +77,7 @@ The class defines black as standard color for hyperlinks and switches from frame
 % \setFSlinkcolor{blue} % comment out for default color
 \FShypersetup
 ```
-To enable as example blue hyperlinks uncomment the \setFShyperlink{colname} command and ad a color after your choice.
+To enable as example blue hyperlinks uncomment the ```\setFShyperlink{colname}``` command. In case other colors are wanted just choose them instead of blue.
 
 ```latex
 \setFSlinkcolor{blue} % comment out for default color
