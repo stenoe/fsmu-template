@@ -11,7 +11,19 @@
 \title{Here will be the title of the paper}
 \setFSsubtitle{Research paper}
 
-\setFSauthor{Author One\textsuperscript{1,2*}, Author Two\textsuperscript{3}, Author Three\textsuperscript{3}}
+% --------------------
+% Set the link colors for hyperlinks default is black
+%
+\setFSlinkcolor{blue} % comment out for default color
+\FShypersetup
+% --------------------
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidA}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidA{} behind the author's name
+\newcommand{\orcidB}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidB{} behind the author's name
+\newcommand{\orcidC}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidC{} behind the author's name
+
+\setFSauthor{Author One\textsuperscript{1,2*}\orcidA, Author Two\textsuperscript{3}\orcidB, Author Three\textsuperscript{3}\orcidC}
 
 \setFSaffil{
   \textsuperscript{1}Affiliation1, University1 , zip1 place1, country1;
@@ -95,6 +107,7 @@ Here we can to some \parencite{Baldocchi.gcb.12649} citations and some more \par
 \blindtext[4]
 
 % Bibliography
+%\setFSbibresource{references.bib}
 \printbibliography
 
 \end{document}

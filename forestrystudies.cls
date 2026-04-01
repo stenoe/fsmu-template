@@ -1,11 +1,9 @@
 % forestrystudies.cls
 % LaTeX class for Forestry Studies | Metsanduslikud Uurimused journal
-% Author: Steffen Noe
-% Date: 2026-03-02
-% Version: 1.0.1
+% Author/s: Steffen Noe, Emilio Mercuri
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{forestrystudies}[2026/03/02 Forestry Studies refined class]
+\ProvidesClass{forestrystudies}[2026/04/01 Forestry Studies refined class]
 \LoadClass[12pt, twoside]{article}
 
 % --------------------
@@ -45,6 +43,7 @@
 \RequirePackage{multicol} % in case it's useful
 \RequirePackage{calc}
 \RequirePackage{afterpage}
+\RequirePackage{tikz}
 
 % --------------------
 % Page layout and basic settings
@@ -66,6 +65,11 @@
 % CC BY Logo filename (document can call \setFSccbylogo{file.png})
 \newcommand{\FS@ccbylogo}{}                  % default empty
 \newcommand{\setFSccbylogo}[1]{\renewcommand{\FS@ccbylogo}{#1}}
+
+% ORCID icon for the author list (document can call \setFSorcidicon{file.png})
+\newcommand{\FS@orcidicon}{logos/logo-orcid.pdf}
+\newcommand{\setFSorcidicon}[1]{\renewcommand{\FS@orcidicon}{#1}}
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{\FS@orcidicon}}
 
 % Journal info line (printed in first-page header area)
 \newcommand{\FS@journalinfo}{Forestry Studies | Metsanduslikud Uurimused}
@@ -100,8 +104,12 @@
 \newcommand{\setFScopyright}[1]{\renewcommand{\FS@copyright}{#1}}
 
 % bibresource set the bibliography file
-\newcommand{\FS@bibresource}{}
+\newcommand{\FS@bibresource}{references.bib} % default bibliography file
 \newcommand{\setFSbibresource}[1]{\renewcommand{\FS@bibresource}{#1}}
+
+% hyperlink color setup (document can call \setFSlinkcolor{blue} or similar)
+\newcommand{\FS@linkcolor}{black} % default link color is black
+\newcommand{\setFSlinkcolor}[1]{\renewcommand{\FS@linkcolor}{#1}}
 
 % Running author (document may override via \renewcommand{\runningauthor}{...})
 \newcommand{\runningauthor}{}
@@ -257,10 +265,25 @@
 }
 
 % --------------------
+% Hyperref setup (colors can be adjusted as needed)
+% --------------------
+\newcommand{\FShypersetup}{%
+  \hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=\FS@linkcolor,          % color of internal links (change box color with linkbordercolor)
+    citecolor=\FS@linkcolor,        % color of links to bibliography
+    filecolor=\FS@linkcolor,      % color of file links
+    urlcolor=\FS@linkcolor
+  }         % color of external links
+}
+\AtBeginDocument{\FShypersetup} % apply hyperref setup at begin of document
+
+% --------------------
 % Bibliography: biblatex / biber by default
 % --------------------
 \RequirePackage[backend=biber,style=apa,maxcitenames=2]{biblatex}
-\addbibresource{references.bib} % default bibliography file
+\addbibresource{\FS@bibresource} % default bibliography file
+%\addbibresource{references.bib}
 
 \DeclareFieldFormat[article,incollection,unpublished]{title}{#1}%No quotes for article titles
 \DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} % Theses like book titles
