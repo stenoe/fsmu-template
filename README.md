@@ -69,6 +69,22 @@ pdflatex filename.tex
 \setFScitation{Citation information}
 ```
 
+### Setting hyperlink colors
+
+The class defines black as standard color for hyperlinks and switches from frames to color scheme. 
+
+```latex
+% \setFSlinkcolor{blue} % comment out for default color
+\FShypersetup
+```
+To enable as example blue hyperlinks uncomment the \setFShyperlink{colname} command and ad a color after your choice.
+
+```latex
+\setFSlinkcolor{blue} % comment out for default color
+\FShypersetup
+```
+
+
 ### Setting Logos
 
 ```latex
