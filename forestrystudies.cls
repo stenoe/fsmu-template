@@ -22,10 +22,18 @@
 \RequirePackage{unicode-math}
 
 % Times-like fonts (close to newtx)
-\setmainfont{texgyrepagella}
-%\setsansfont{FiraSans}
+\IfFontExistsTF{TeX Gyre Pagella}{
+  \setmainfont{TeX Gyre Pagella}
+}{
+  \setmainfont{Latin Modern Roman}
+}
+%\setsansfont{Fira Sans}
 %\setmonofont{TeX Gyre Cursor}
-\setmathfont{texgyrepagella-math}
+\IfFontExistsTF{TeX Gyre Pagella Math}{
+  \setmathfont{TeX Gyre Pagella Math}
+}{
+  \setmathfont{Latin Modern Math}
+}
 \fi
 
 \RequirePackage{geometry}
