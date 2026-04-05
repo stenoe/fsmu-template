@@ -21,6 +21,8 @@
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
 
+\RequirePackage{cuted} % for \onecolumn ... \twocolumn switch in title/abstract block
+
 % Times-like fonts (close to newtx)
 \IfFontExistsTF{TeX Gyre Pagella}{
   \setmainfont{TeX Gyre Pagella}
@@ -62,6 +64,7 @@
 %\onehalfspacing
 \singlespacing
 \setlength{\columnsep}{20pt}
+\setlength{\footskip}{70pt}
 
 % --------------------
 % User-settable strings and logo
@@ -222,37 +225,104 @@
   \endgroup
 }
 
-% Public macro for one-column title + abstract block used inside \twocolumn[ ... ]
-% Usage: \twocolumn[\FSmaketitleandabstract{<abstract text>}]
+% % Public macro for one-column title + abstract block used inside \twocolumn[ ... ]
+% % Usage: \twocolumn[\FSmaketitleandabstract{<abstract text>}]
+% \newcommand{\FSmaketitleandabstract}[1]{%
+%   \thispagestyle{FSfirst}% apply first page style (logo + journal info)
+%   \begingroup
+%   %\centering
+%   \hfill % to ensure the minipage is left-aligned
+%   \begin{minipage}[t]{0.88\textwidth}%
+%     \vspace{3ex}%
+%     {\FS@subtitle \par}\vspace{3ex}%
+%     {\FS@titlefont \@title \par}\vspace{3ex}%
+%     % authors (authblk will have already formatted \@author)
+%     {\FS@authorfont \FS@author \par}\vspace{3ex}%
+%     % optional short citation line below authors (comment out or edit in document if undesired)
+%     {\FS@affilfont {\FS@citation}\par}\vspace{3ex}%
+%     % Abstract block: bold label + text
+%     \begin{minipage}{\textwidth}
+%       {\FS@abstractfont \textbf{Abstract.}\ #1 \par}
+%     \end{minipage}\par\vspace{3ex}%
+%     \begin{minipage}{\textwidth}
+%       {\FS@keywordfont \textbf{Key words:}\ \FS@keywords \par}
+%     \end{minipage}\par\vspace{3ex}%
+%     \begin{minipage}{\textwidth}
+%       {\FS@affilfont \textbf{Authors' addresses:}\ \FS@affil \par}
+%     \end{minipage}\par\vspace{5ex}%
+%   \end{minipage}%
+%   \endgroup
+%   \afterpage{
+%     \newgeometry{left=20mm,right=20mm,top=10mm,bottom=10mm,includehead,includefoot}
+%     \twocolumn[]
+%   }
+% }
+
+% % Public macro for full-width title/abstract front matter on page 1,
+% % then switch directly to normal two-column mode for the manuscript body.
+% % Usage in the .tex file:
+% % \FSmaketitleandabstract{<abstract text>}
+% \newcommand{\FSmaketitleandabstract}[1]{%
+%   \onecolumn
+%   \thispagestyle{FSfirst}%
+%   \begingroup
+%   \hfill
+%   \begin{minipage}[t]{0.88\textwidth}%
+%     \vspace{3ex}%
+%     {\FS@subtitle \par}\vspace{3ex}%
+%     {\FS@titlefont \@title \par}\vspace{3ex}%
+%     {\FS@authorfont \FS@author \par}\vspace{3ex}%
+%     {\FS@affilfont {\FS@citation}\par}\vspace{3ex}%
+%     \begin{minipage}{\textwidth}
+%       {\FS@abstractfont \textbf{Abstract.}\ #1 \par}
+%     \end{minipage}\par\vspace{3ex}%
+%     \begin{minipage}{\textwidth}
+%       {\FS@keywordfont \textbf{Key words:}\ \FS@keywords \par}
+%     \end{minipage}\par\vspace{3ex}%
+%     \begin{minipage}{\textwidth}
+%       {\FS@affilfont \textbf{Authors' addresses:}\ \FS@affil \par}
+%     \end{minipage}\par\vspace{5ex}%
+%   \end{minipage}%
+%   \par
+%   \endgroup
+%   \newgeometry{left=20mm,right=20mm,top=10mm,bottom=10mm,includehead,includefoot}%
+%   \twocolumn
+%   \pagestyle{FSnormal}%
+% }
+
+
+% Full-width title/abstract block on page 1 inside a two-column document.
+% This does NOT force a page break after the block.
+% Usage in the .tex file:
+% \begin{document}
+% \twocolumn
+% \FSmaketitleandabstract{<abstract text>}
+% \section*{Introduction}
 \newcommand{\FSmaketitleandabstract}[1]{%
-  \thispagestyle{FSfirst}% apply first page style (logo + journal info)
-  \begingroup
-  %\centering
-  \hfill % to ensure the minipage is left-aligned
-  \begin{minipage}[t]{0.88\textwidth}%
-    \vspace{3ex}%
-    {\FS@subtitle \par}\vspace{3ex}%
-    {\FS@titlefont \@title \par}\vspace{3ex}%
-    % authors (authblk will have already formatted \@author)
-    {\FS@authorfont \FS@author \par}\vspace{3ex}%
-    % optional short citation line below authors (comment out or edit in document if undesired)
-    {\FS@affilfont {\FS@citation}\par}\vspace{3ex}%
-    % Abstract block: bold label + text
-    \begin{minipage}{\textwidth}
-      {\FS@abstractfont \textbf{Abstract.}\ #1 \par}
-    \end{minipage}\par\vspace{3ex}%
-    \begin{minipage}{\textwidth}
-      {\FS@keywordfont \textbf{Key words:}\ \FS@keywords \par}
-    \end{minipage}\par\vspace{3ex}%
-    \begin{minipage}{\textwidth}
-      {\FS@affilfont \textbf{Authors' addresses:}\ \FS@affil \par}
-    \end{minipage}\par\vspace{5ex}%
-  \end{minipage}%
-  \endgroup
-  \afterpage{
-    \newgeometry{left=20mm,right=20mm,top=10mm,bottom=10mm,includehead,includefoot}
-    \twocolumn[]
-  }
+  \begin{strip}
+    \thispagestyle{FSfirst}%
+    \begingroup
+    \hfill
+    \begin{minipage}[t]{0.88\textwidth}%
+      \vspace{3ex}%
+      {\FS@subtitle \par}\vspace{3ex}%
+      {\FS@titlefont \@title \par}\vspace{3ex}%
+      {\FS@authorfont \FS@author \par}\vspace{3ex}%
+      {\FS@affilfont {\FS@citation}\par}\vspace{3ex}%
+      \begin{minipage}{\textwidth}
+        {\FS@abstractfont \textbf{Abstract.}\ #1 \par}
+      \end{minipage}\par\vspace{3ex}%
+      \begin{minipage}{\textwidth}
+        {\FS@keywordfont \textbf{Key words:}\ \FS@keywords \par}
+      \end{minipage}\par\vspace{3ex}%
+      \begin{minipage}{\textwidth}
+        {\FS@affilfont \textbf{Authors' addresses:}\ \FS@affil \par}
+      \end{minipage}\par\vspace{2ex}%
+    \end{minipage}%
+    \par
+    \endgroup
+  \end{strip}
+  \pagestyle{FSnormal}%
 }
 
 % --------------------

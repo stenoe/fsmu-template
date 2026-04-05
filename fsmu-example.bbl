@@ -21,21 +21,21 @@
   \datalist[entry]{apa/apasortcite//global/global/global}
     \entry{Baldocchi.gcb.12649}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f59c136a5386f832f7a5545b322b07fe}{%
+        {{un=0,uniquepart=base,hash=70bb8bcb921e8f383af8538c00ebb999}{%
            family={Baldocchi},
            familyi={B\bibinitperiod},
-           given={Dennis},
+           given={D.},
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{fullhash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{fullhashraw}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{bibnamehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authorbibnamehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authornamehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authorfullhash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authorfullhashraw}{f59c136a5386f832f7a5545b322b07fe}
+      \strng{namehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{bibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorbibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authornamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -44,25 +44,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Global Change Biology}
-      \field{number}{12}
-      \field{title}{Measuring fluxes of trace gases and energy between ecosystems and the atmosphere – the state and future of the eddy covariance method}
-      \field{volume}{20}
-      \field{year}{2014}
-      \field{pages}{3600\bibrangedash 3609}
+      \field{title}{Example citation}
+      \field{volume}{1}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 10}
       \range{pages}{10}
-      \verb{doi}
-      \verb https://doi.org/10.1111/gcb.12649
-      \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/gcb.12649
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12649
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12649
-      \endverb
-      \keyw{biogeophysics,biogeoscience,biosphere–atmosphere interactions,ecosystem ecology,eddy covariance,FLUXNET,micrometeorology,net ecosystem exchange}
     \endentry
     \entry{hariSmear2005}{article}{}{}
       \name{author}{2}{}{%
@@ -293,21 +279,21 @@
   \datalist[entry]{apa/global//global/global/global}
     \entry{Baldocchi.gcb.12649}{article}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f59c136a5386f832f7a5545b322b07fe}{%
+        {{un=0,uniquepart=base,hash=70bb8bcb921e8f383af8538c00ebb999}{%
            family={Baldocchi},
            familyi={B\bibinitperiod},
-           given={Dennis},
+           given={D.},
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{fullhash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{fullhashraw}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{bibnamehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authorbibnamehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authornamehash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authorfullhash}{f59c136a5386f832f7a5545b322b07fe}
-      \strng{authorfullhashraw}{f59c136a5386f832f7a5545b322b07fe}
+      \strng{namehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{bibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorbibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authornamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -316,25 +302,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Global Change Biology}
-      \field{number}{12}
-      \field{title}{Measuring fluxes of trace gases and energy between ecosystems and the atmosphere – the state and future of the eddy covariance method}
-      \field{volume}{20}
-      \field{year}{2014}
-      \field{pages}{3600\bibrangedash 3609}
+      \field{title}{Example citation}
+      \field{volume}{1}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 10}
       \range{pages}{10}
-      \verb{doi}
-      \verb https://doi.org/10.1111/gcb.12649
-      \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/gcb.12649
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12649
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12649
-      \endverb
-      \keyw{biogeophysics,biogeoscience,biosphere–atmosphere interactions,ecosystem ecology,eddy covariance,FLUXNET,micrometeorology,net ecosystem exchange}
     \endentry
     \entry{hariSmear2005}{article}{}{}
       \name{author}{2}{}{%
