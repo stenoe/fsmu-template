@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber fsmu-example"] 0 "fsmu-example.bcf" "fsmu-example.bbl" "fsmu-example" 1775431131.0955 -1
-  "fsmu-example.bcf" 1775431130.93087 134419 1a11e2fb273ad3f16943939ab37bd2c9 "pdflatex"
+["biber fsmu-example"] 0 "fsmu-example.bcf" "fsmu-example.bbl" "fsmu-example" 1775431754.82628 -1
+  "fsmu-example.bcf" 1775431754.6897 134419 1a11e2fb273ad3f16943939ab37bd2c9 "pdflatex"
   "references.bib" 1775425854.00895 25569 0f3cdaed17e52eddb53d249593bb150c ""
   (generated)
   "fsmu-example.bbl"
   "fsmu-example.blg"
   (rewritten before read)
-["pdflatex"] 1775431129.09062 "/Users/emiliomercuri/github/fsmu-template/fsmu-example.tex" "fsmu-example.pdf" "fsmu-example" 1775431131.09587 0
+["pdflatex"] 1775431753.06639 "/Users/emiliomercuri/github/fsmu-template/fsmu-example.tex" "fsmu-example.pdf" "fsmu-example" 1775431754.82663 0
   "/Users/emiliomercuri/github/fsmu-template/fsmu-example.tex" 1775431124.91813 9795 b7952a72b0329729a99527fafe04bf66 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
@@ -249,9 +249,9 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1757194317 3345731 e6fff7875858df8b05aa95fc7c80eb39 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "forestrystudies.cls" 1775431038.44952 12600 32376f05871941e9a2d30895eda6e74e ""
-  "fsmu-example.aux" 1775431130.92671 2606 797094f70f806741a2c99ca6a139c2b4 "pdflatex"
+  "fsmu-example.aux" 1775431754.68608 2606 797094f70f806741a2c99ca6a139c2b4 "pdflatex"
   "fsmu-example.bbl" 1775426274.53434 23032 05de218acabdb34a84097dd0eafa9abc "biber fsmu-example"
-  "fsmu-example.run.xml" 1775431130.93174 2483 d5123deafdbfeaf45b3bf35bb31540ae "pdflatex"
+  "fsmu-example.run.xml" 1775431754.6904 2483 d5123deafdbfeaf45b3bf35bb31540ae "pdflatex"
   "fsmu-example.tex" 1775431124.91813 9795 b7952a72b0329729a99527fafe04bf66 ""
   "logos/ccby.png" 1775339498.71321 13595 72e8e5c47783696a753b688547f01ac7 ""
   "logos/logo-orcid.pdf" 1775339498.71335 12671 39a20ba789123aa897c7efc569fb5270 ""
