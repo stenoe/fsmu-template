@@ -1,0 +1,539 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{Baldocchi.gcb.12649}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70bb8bcb921e8f383af8538c00ebb999}{%
+           family={Baldocchi},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{bibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorbibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authornamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Global Change Biology}
+      \field{title}{Example citation}
+      \field{volume}{1}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+    \endentry
+    \entry{hariSmear2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3393deaf7cd19d0f84de4ce6dd7a293c}{%
+           family={Hari},
+           familyi={H\bibinitperiod},
+           given={Pertti},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80cc3633d0c214ba3341770477634389}{%
+           family={Kulmala},
+           familyi={K\bibinitperiod},
+           given={Markku},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Finnish Environment Institute}%
+      }
+      \strng{namehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{fullhash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{fullhashraw}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{bibnamehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authorbibnamehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authornamehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authorfullhash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authorfullhashraw}{32e887e011a6f0edf7b5c65ba75e4235}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here we present the ongoing SMEAR (Station for Measuring Forest Ecosystem Atmosphere Relations) research program and also related future views. The main idea of SMEAR-type infrastructures is continuous, comprehensive measurements of fluxes, storages and concentrations in the land ecosystem-atmosphere continuum. The major coupling mechanisms between atmosphere and land surface are the fluxes of energy, momentum, water, carbon dioxide, atmospheric trace gases and atmospheric aerosols. Understanding of couplings and feedbacks is the basis for the prediction of changes in the system formed by atmosphere, vegetation and soil. A better quantification of the agents that cause climate change, as well as the emissions and removals of species, will provide more accurate projections of future atmospheric composition and hence climate.}
+      \field{issn}{1239-6095}
+      \field{journaltitle}{Boreal Environment Research}
+      \field{number}{5}
+      \field{title}{{Station for Measuring Ecosystem-Atmosphere Relations (SMEAR II)}}
+      \field{volume}{10}
+      \field{year}{2005}
+      \field{pages}{315\bibrangedash 322}
+      \range{pages}{8}
+      \keyw{411 Agriculture and forestry,metsäekosysteemit,metsät,ilmalaatu,metsäekosysteemit,metsät,ilmalaatu,metsäekosysteemit,metsät,ilmalaatu}
+    \endentry
+    \entry{mercuri2023water}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1ef374e03130aa2efeaed2d889a9b8f2}{%
+           family={Mercuri},
+           familyi={M\bibinitperiod},
+           given={Emílio\bibnamedelimb Graciliano\bibnamedelima Ferreira},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44e674c7ac9f6f65cdbcd6d72dfd95d4}{%
+           family={Tamm},
+           familyi={T\bibinitperiod},
+           given={Toomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef89b67179413da3b395159bea5e6543}{%
+           family={Noe},
+           familyi={N\bibinitperiod},
+           given={Steffen\bibnamedelima Manfred},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b2e64ef03f71a059c47eac471a7f3b14}
+      \strng{fullhash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{fullhashraw}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{bibnamehash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{authorbibnamehash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{authornamehash}{b2e64ef03f71a059c47eac471a7f3b14}
+      \strng{authorfullhash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{authorfullhashraw}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Forestry Studies}
+      \field{number}{1}
+      \field{title}{Water and carbon balances in a hemi-boreal forest}
+      \field{volume}{78}
+      \field{year}{2023}
+      \field{pages}{72\bibrangedash 90}
+      \range{pages}{19}
+    \endentry
+    \entry{NoeSmear2015}{article}{}{}
+      \name{author}{17}{}{%
+        {{un=0,uniquepart=base,hash=2f90abb8300f9e7bcb3b7d9026b182bb}{%
+           family={Noe},
+           familyi={N\bibinitperiod},
+           given={Steffen\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5db084f5d3894b3621b086945c2e725b}{%
+           family={Niinemets},
+           familyi={N\bibinitperiod},
+           given={Ülo},
+           giveni={Ü\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4f29fdc8ae4df10e39360fd381227e9}{%
+           family={Krasnova},
+           familyi={K\bibinitperiod},
+           given={Alisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a1c270f8004f274d55b8dba947b0df9}{%
+           family={Krasnov},
+           familyi={K\bibinitperiod},
+           given={Dmitrii},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cb745a473b5b37eedddb6f71e8360a0}{%
+           family={Motallebi},
+           familyi={M\bibinitperiod},
+           given={Azimeh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a316cc8f8ca56802371043e5dc328e6}{%
+           family={Kängsepp},
+           familyi={K\bibinitperiod},
+           given={Vivika},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891e32f8b55d3619c52dd94389303e09}{%
+           family={Jõgiste},
+           familyi={J\bibinitperiod},
+           given={Kalev},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1da859169648535f14643bea8f3062a5}{%
+           family={Hõrrak},
+           familyi={H\bibinitperiod},
+           given={Urmas},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aea268cbb595ac421254403d474d88fc}{%
+           family={Komsaare},
+           familyi={K\bibinitperiod},
+           given={Kaupo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c29e8496c25dc36d328c2183631a406f}{%
+           family={Mirme},
+           familyi={M\bibinitperiod},
+           given={Sander},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f640d2499657e016d70a07beab1340d7}{%
+           family={Vana},
+           familyi={V\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d58ff672c3f08be040c54d7ee387c5b}{%
+           family={Tammet},
+           familyi={T\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61a4ff9cb4486726c02e4176425283bd}{%
+           family={Bäck},
+           familyi={B\bibinitperiod},
+           given={Jaana},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06a82af2867c3934ae310f18e8d9c4a6}{%
+           family={Vesala},
+           familyi={V\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80cc3633d0c214ba3341770477634389}{%
+           family={Kulmala},
+           familyi={K\bibinitperiod},
+           given={Markku},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81b6cb6944d027db868a39d7398d8070}{%
+           family={Petäjä},
+           familyi={P\bibinitperiod},
+           given={Tuukka},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edd5b99a50b0f3df720e33288ce8789e}{%
+           family={Kangur},
+           familyi={K\bibinitperiod},
+           given={Ahto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{67914f49217fd5cee752455b0ba57d04}
+      \strng{fullhash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{fullhashraw}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{bibnamehash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{authorbibnamehash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{authornamehash}{67914f49217fd5cee752455b0ba57d04}
+      \strng{authorfullhash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{authorfullhashraw}{2f7041e4b3c41f3ca65796440962c510}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Forestry Studies}
+      \field{number}{1}
+      \field{title}{{SMEAR Estonia}: Perspectives of a large-scale forest ecosystem-atmosphere research infrastructure}
+      \field{volume}{63}
+      \field{year}{2015}
+      \field{pages}{56\bibrangedash 84}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1515/fsmu-2015-0009
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/fsmu-2015-0009
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/fsmu-2015-0009
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{Baldocchi.gcb.12649}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70bb8bcb921e8f383af8538c00ebb999}{%
+           family={Baldocchi},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{fullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{bibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorbibnamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authornamehash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhash}{70bb8bcb921e8f383af8538c00ebb999}
+      \strng{authorfullhashraw}{70bb8bcb921e8f383af8538c00ebb999}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Global Change Biology}
+      \field{title}{Example citation}
+      \field{volume}{1}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+    \endentry
+    \entry{hariSmear2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3393deaf7cd19d0f84de4ce6dd7a293c}{%
+           family={Hari},
+           familyi={H\bibinitperiod},
+           given={Pertti},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80cc3633d0c214ba3341770477634389}{%
+           family={Kulmala},
+           familyi={K\bibinitperiod},
+           given={Markku},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Finnish Environment Institute}%
+      }
+      \strng{namehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{fullhash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{fullhashraw}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{bibnamehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authorbibnamehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authornamehash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authorfullhash}{32e887e011a6f0edf7b5c65ba75e4235}
+      \strng{authorfullhashraw}{32e887e011a6f0edf7b5c65ba75e4235}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here we present the ongoing SMEAR (Station for Measuring Forest Ecosystem Atmosphere Relations) research program and also related future views. The main idea of SMEAR-type infrastructures is continuous, comprehensive measurements of fluxes, storages and concentrations in the land ecosystem-atmosphere continuum. The major coupling mechanisms between atmosphere and land surface are the fluxes of energy, momentum, water, carbon dioxide, atmospheric trace gases and atmospheric aerosols. Understanding of couplings and feedbacks is the basis for the prediction of changes in the system formed by atmosphere, vegetation and soil. A better quantification of the agents that cause climate change, as well as the emissions and removals of species, will provide more accurate projections of future atmospheric composition and hence climate.}
+      \field{issn}{1239-6095}
+      \field{journaltitle}{Boreal Environment Research}
+      \field{number}{5}
+      \field{title}{{Station for Measuring Ecosystem-Atmosphere Relations (SMEAR II)}}
+      \field{volume}{10}
+      \field{year}{2005}
+      \field{pages}{315\bibrangedash 322}
+      \range{pages}{8}
+      \keyw{411 Agriculture and forestry,metsäekosysteemit,metsät,ilmalaatu,metsäekosysteemit,metsät,ilmalaatu,metsäekosysteemit,metsät,ilmalaatu}
+    \endentry
+    \entry{mercuri2023water}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1ef374e03130aa2efeaed2d889a9b8f2}{%
+           family={Mercuri},
+           familyi={M\bibinitperiod},
+           given={Emílio\bibnamedelimb Graciliano\bibnamedelima Ferreira},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44e674c7ac9f6f65cdbcd6d72dfd95d4}{%
+           family={Tamm},
+           familyi={T\bibinitperiod},
+           given={Toomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef89b67179413da3b395159bea5e6543}{%
+           family={Noe},
+           familyi={N\bibinitperiod},
+           given={Steffen\bibnamedelima Manfred},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b2e64ef03f71a059c47eac471a7f3b14}
+      \strng{fullhash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{fullhashraw}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{bibnamehash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{authorbibnamehash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{authornamehash}{b2e64ef03f71a059c47eac471a7f3b14}
+      \strng{authorfullhash}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \strng{authorfullhashraw}{9b8b358d6bdaef75eb9af675c23d7dd9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Forestry Studies}
+      \field{number}{1}
+      \field{title}{Water and carbon balances in a hemi-boreal forest}
+      \field{volume}{78}
+      \field{year}{2023}
+      \field{pages}{72\bibrangedash 90}
+      \range{pages}{19}
+    \endentry
+    \entry{NoeSmear2015}{article}{}{}
+      \name{author}{17}{}{%
+        {{un=0,uniquepart=base,hash=2f90abb8300f9e7bcb3b7d9026b182bb}{%
+           family={Noe},
+           familyi={N\bibinitperiod},
+           given={Steffen\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5db084f5d3894b3621b086945c2e725b}{%
+           family={Niinemets},
+           familyi={N\bibinitperiod},
+           given={Ülo},
+           giveni={Ü\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4f29fdc8ae4df10e39360fd381227e9}{%
+           family={Krasnova},
+           familyi={K\bibinitperiod},
+           given={Alisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a1c270f8004f274d55b8dba947b0df9}{%
+           family={Krasnov},
+           familyi={K\bibinitperiod},
+           given={Dmitrii},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cb745a473b5b37eedddb6f71e8360a0}{%
+           family={Motallebi},
+           familyi={M\bibinitperiod},
+           given={Azimeh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a316cc8f8ca56802371043e5dc328e6}{%
+           family={Kängsepp},
+           familyi={K\bibinitperiod},
+           given={Vivika},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891e32f8b55d3619c52dd94389303e09}{%
+           family={Jõgiste},
+           familyi={J\bibinitperiod},
+           given={Kalev},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1da859169648535f14643bea8f3062a5}{%
+           family={Hõrrak},
+           familyi={H\bibinitperiod},
+           given={Urmas},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aea268cbb595ac421254403d474d88fc}{%
+           family={Komsaare},
+           familyi={K\bibinitperiod},
+           given={Kaupo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c29e8496c25dc36d328c2183631a406f}{%
+           family={Mirme},
+           familyi={M\bibinitperiod},
+           given={Sander},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f640d2499657e016d70a07beab1340d7}{%
+           family={Vana},
+           familyi={V\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d58ff672c3f08be040c54d7ee387c5b}{%
+           family={Tammet},
+           familyi={T\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61a4ff9cb4486726c02e4176425283bd}{%
+           family={Bäck},
+           familyi={B\bibinitperiod},
+           given={Jaana},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06a82af2867c3934ae310f18e8d9c4a6}{%
+           family={Vesala},
+           familyi={V\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80cc3633d0c214ba3341770477634389}{%
+           family={Kulmala},
+           familyi={K\bibinitperiod},
+           given={Markku},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81b6cb6944d027db868a39d7398d8070}{%
+           family={Petäjä},
+           familyi={P\bibinitperiod},
+           given={Tuukka},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edd5b99a50b0f3df720e33288ce8789e}{%
+           family={Kangur},
+           familyi={K\bibinitperiod},
+           given={Ahto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{67914f49217fd5cee752455b0ba57d04}
+      \strng{fullhash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{fullhashraw}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{bibnamehash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{authorbibnamehash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{authornamehash}{67914f49217fd5cee752455b0ba57d04}
+      \strng{authorfullhash}{2f7041e4b3c41f3ca65796440962c510}
+      \strng{authorfullhashraw}{2f7041e4b3c41f3ca65796440962c510}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Forestry Studies}
+      \field{number}{1}
+      \field{title}{{SMEAR Estonia}: Perspectives of a large-scale forest ecosystem-atmosphere research infrastructure}
+      \field{volume}{63}
+      \field{year}{2015}
+      \field{pages}{56\bibrangedash 84}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1515/fsmu-2015-0009
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/fsmu-2015-0009
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/fsmu-2015-0009
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

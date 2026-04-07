@@ -4,12 +4,24 @@
 \usepackage{blindtext} % dummy text for the example
 \usepackage{afterpage}
 \usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage{bookmark}
+\usepackage{cuted}
+
+
+\sisetup{
+    detect-all,
+    per-mode=symbol,
+    range-phrase = {--},
+    range-units = single,
+    separate-uncertainty = true
+}
 
 % --------------------
 % Document metadata
 % --------------------
-\title{Here will be the title of the paper}
-\setFSsubtitle{Research paper}
+\title{Title should be short with maximum length of 100 characters or 15 words. Never in capitals.}
+\setFSsubtitle{Choose between: Research paper, Review paper or Short communication.}
 
 % --------------------
 % Set the link colors for hyperlinks default is black
@@ -34,7 +46,7 @@
 
 \setFScitation{\textbf{One, A., Two, A., Three, A.} 2024. Title. -- Forestry Studies | Metsanduslikud Uurimused 80, 1-19, ISSN 1406-9954. Journal homepage: \href{https://mi.emu.ee/en/forestry-studies}{https://mi.emu.ee/en/forestry-studies}  }
 
-\setFSkeywords{keyword 1, keyword 2, keyword 3.}
+\setFSkeywords{One line, separated by a comma: keyword 1, keyword 2, keyword 3.}
 
 % Running author for header
 \renewcommand{\runningauthor}{A. One \textit{et al.}}
@@ -59,15 +71,49 @@ article is an open access article distributed under the terms and conditions of 
 \begin{document}
 %\newgeometry{left=20mm,right=20mm,top=10mm,bottom=40mm,includehead,includefoot}
 
-\twocolumn[
-  \FSmaketitleandabstract{Here will be the abstract. \blindtext[2].}
-]
+\twocolumn
+
+%\twocolumn[
+  \FSmaketitleandabstract{Here will be the abstract. The Abstract should provide a brief summary (not more than 250 words) of the study including the purpose, methods, results, and major conclusions. All biological and chemical names, and technical terms should conform to the most recent international nomenclature. Latin botanical and zoological names of Genera and species (e.g. \textit{Hylobius abietis L.}), words which are not originally English (e.g. \textit{in vitro}), and symbols expressing numerical values in the text and equations (e.g. $S.D.$, $S.E.$, $p$, $n$, $r$) should be typed in italics. If mathematical symbols have more than one letter, they should be italicized using \texttt{testit} environment: e.g. \textit{t-test}. The SI system, which includes the metric units should be used throughout. The \texttt{siunitx} package should be used for all numbers, units, ranges, and scientific notation in the manuscript to ensure consistency and correct SI formatting. Authors are encouraged to avoid typing units manually in math or text mode whenever possible. Use \texttt{unit{}} for units only, \texttt{qty{}} for a number together with its unit, and \texttt{qtyrange{}} for ranges. For example: \unit{\meter}, \qty{25}{\celsius}, \qty{12.5}{\milli\gram\per\liter}, \qtyrange{10}{20}{\meter\per\second}. Scientific notation should also be formatted with \texttt{siunitx}: e.g. \num{3.5e-4}. All abbreviations, nomenclature and symbols must be the same in the text and figures. The abstract should be self-contained and should not include references, figures, or tables.}
+%]
 
 % Two-column body begins here
 \section*{Introduction}
-\blindtext[2]
-\parencite{mercuri2023water} \parencite{hariSmear2005}
-\blindtext[1]
+
+
+%\blindtext[2]
+
+Here is the introduction. It should provide background information and context for the study, clearly state the research question or hypothesis, and explain the significance of the work. The introduction should be concise and focused, leading the reader to understand why the study was conducted and what it aims to achieve.
+
+
+%\blindtext[2]
+
+\subsection*{The structure of manuscript}
+
+The standard order in sections: Introduction, Material and Methods, Results, Discussion, Conclusions, Acknowledgements, References. 
+
+
+\subsection*{Citations}
+
+Example of citations in the text. You can use \texttt{natbib} commands for different types of citations, e.g. \texttt{\textbackslash parencite\{\}} for parenthetical citations, \texttt{\textbackslash textcite\{\}} for in-text citations, and \texttt{\textbackslash citet\{\}} for textual citations. For example, here we have some parenthetical citations: \cite{mercuri2023water} \cite{hariSmear2005}. And here we have some in-text citations: \textcite{Baldocchi.gcb.12649} and \textcite{NoeSmear2015}. You can also combine multiple citations in one command, e.g. \texttt{\textbackslash parencite\{key1,key2\}} to get (Author1 Year; Author2 Year). For example, here we have some combined parenthetical citations: \parencite{mercuri2023water} \parencite{hariSmear2005}.
+
+\subsection*{Tables, figures, equations and units}
+
+For tables, align numerical values using the S column type instead of manual spacing. For example:
+
+\begin{tabular}{l S S}
+\toprule
+Sample & {Temperature} & {Concentration} \\
+       & {\unit{\celsius}} & {\unit{\milli\gram\per\liter}} \\
+\midrule
+A      & 23.5  & 12.4 \\
+B      & 25.1  & 15.8 \\
+\bottomrule 
+\end{tabular}
+
+
+
+Equations should be numbered and formatted using the \texttt{equation} environment. For example, here is an equation:
 
 % Equation
 %
@@ -75,8 +121,14 @@ article is an open access article distributed under the terms and conditions of 
   f(x) = \frac{\sin(x+2\pi)}{a}
 \end{equation}
 
+Authors should write unit symbols in upright font and leave spacing to siunitx, rather than inserting spaces manually. Thus, use: \qty{5}{\kilo\meter} instead of 5 km, and \qty{3.5e-4}{\milli\gram\per\liter} instead of 3.5e-4 mg/L.   
+
 \section*{Material and Methods}
-\blindtext[2]
+
+Here is the Material and Methods section. It should provide a detailed description of the materials, methods, and procedures used in the study, allowing other researchers to replicate the work if desired. This section should be clear and concise, with enough detail to understand how the research was conducted without including unnecessary information.
+
+
+Example of a Figure that is too wide for one column. It will be automatically placed on the next page and will span over the whole page width. The caption will be centered and will span the whole page width as well. The figure itself will be centered within the caption box, but it will not stretch to fill the entire width of the page. This is because the figure is designed to fit within a single column, and it will maintain its original size and aspect ratio. If you want the figure to stretch to fill the entire width of the page, you would need to use a different figure environment, such as \texttt{figure*}, which allows for wider figures that can span across both columns in a two-column layout.
 
 % Figure that fit into one column!
 \begin{figure}[H]
@@ -86,7 +138,8 @@ article is an open access article distributed under the terms and conditions of 
 \end{figure}
 
 \section*{Results}
-\blindtext[3]
+
+Here is the Results section. It should present the findings of the study in a clear and logical manner, using text, tables, and figures as appropriate. The results should be described objectively, without interpretation or discussion of their implications. The use of subheadings can help to organize the results and make them easier to follow.
 
 % Figure that spans over the whole page.
 % NOTE: the "*"! That enables the break from the twocolumn environment.
@@ -97,14 +150,16 @@ article is an open access article distributed under the terms and conditions of 
   \caption{Example figure caption. with a lot of text so that we can see if the caption spans all the page width. It should as well have more than just one row of text to see the effect of wrapping.}
 \end{figure*}
 
-\blindtext[2]
+%\blindtext[2]
 
 Here we can to some \parencite{Baldocchi.gcb.12649} citations and some more \parencite{NoeSmear2015}.
 
-\blindtext[4]
+%\blindtext[4]
 
 \section*{Discussion and Conclusion}
-\blindtext[4]
+%\blindtext[4]
+
+Discussion should interpret the results, explain their implications, and relate them to existing knowledge in the field. It should also address any limitations of the study and suggest directions for future research. The conclusion should summarize the main findings and their significance, without introducing new information.
 
 % Bibliography
 %\setFSbibresource{references.bib}
