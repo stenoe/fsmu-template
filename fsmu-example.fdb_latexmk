@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber fsmu-example"] 1776935715.14941 "fsmu-example.bcf" "fsmu-example.bbl" "fsmu-example" 1776935723.88984 0
-  "fsmu-example.bcf" 1776935714.9749 134645 8dc93d264d0d7749395e14db33d5abd2 "pdflatex"
+["biber fsmu-example"] 1776935715.14941 "fsmu-example.bcf" "fsmu-example.bbl" "fsmu-example" 1776937898.45662 0
+  "fsmu-example.bcf" 1776937898.33565 134645 8dc93d264d0d7749395e14db33d5abd2 "pdflatex"
   "references.bib" 1776935713.12609 25569 0f3cdaed17e52eddb53d249593bb150c ""
   (generated)
   "fsmu-example.bbl"
   "fsmu-example.blg"
   (rewritten before read)
-["pdflatex"] 1776935713.5788 "/Users/steffen/Documents/Latex/fsmu-template/fsmu-example.tex" "fsmu-example.pdf" "fsmu-example" 1776935723.88987 0
-  "/Users/steffen/Documents/Latex/fsmu-template/fsmu-example.tex" 1776935713.1258 9795 b7952a72b0329729a99527fafe04bf66 ""
+["pdflatex"] 1776937896.93807 "/Users/steffen/Documents/Latex/fsmu-template/fsmu-example.tex" "fsmu-example.pdf" "fsmu-example" 1776937898.45694 0
+  "/Users/steffen/Documents/Latex/fsmu-template/fsmu-example.tex" 1776937896.73634 9780 570d669a4cc09bba11f6b70a58c546ce ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -246,10 +246,10 @@
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1775062780 3636769 818eed728b6caf2781722f78d7dabaaf ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
   "forestrystudies.cls" 1776935713.12196 12600 32376f05871941e9a2d30895eda6e74e ""
-  "fsmu-example.aux" 1776935714.97176 2606 797094f70f806741a2c99ca6a139c2b4 "pdflatex"
+  "fsmu-example.aux" 1776937898.33235 2606 8ca3a5226ee10e249e4bd6893e387fba "pdflatex"
   "fsmu-example.bbl" 1776935723.87474 23032 05de218acabdb34a84097dd0eafa9abc "biber fsmu-example"
-  "fsmu-example.run.xml" 1776935714.97556 2483 d5123deafdbfeaf45b3bf35bb31540ae "pdflatex"
-  "fsmu-example.tex" 1776935713.1258 9795 b7952a72b0329729a99527fafe04bf66 ""
+  "fsmu-example.run.xml" 1776937898.3363 2483 d5123deafdbfeaf45b3bf35bb31540ae "pdflatex"
+  "fsmu-example.tex" 1776937896.73634 9780 570d669a4cc09bba11f6b70a58c546ce ""
   "logos/ccby.png" 1772444795.73026 13595 72e8e5c47783696a753b688547f01ac7 ""
   "logos/logo-orcid.pdf" 1775000850 12671 39a20ba789123aa897c7efc569fb5270 ""
   "logos/logo.pdf" 1772275621.98608 33305 33a6ec66aa63318e66ffb38117e01486 ""

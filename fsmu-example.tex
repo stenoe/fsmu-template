@@ -8,13 +8,12 @@
 \usepackage{bookmark}
 \usepackage{cuted}
 
-
 \sisetup{
-    detect-all,
-    per-mode=symbol,
-    range-phrase = {--},
-    range-units = single,
-    separate-uncertainty = true
+  detect-all,
+  per-mode=symbol,
+  range-phrase = {--},
+  range-units = single,
+  separate-uncertainty = true
 }
 
 % --------------------
@@ -33,9 +32,9 @@
 % Author Orchid ID: enter ID or remove command
 \newcommand{\orcidA}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidA{} behind the author's name
 \newcommand{\orcidB}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidB{} behind the author's name
-\newcommand{\orcidC}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidC{} behind the author's name
+%\newcommand{\orcidC}{\href{https://orcid.org/0000-0000-0000-0000}{\orcidicon}} % Add \orcidC{} behind the author's name
 
-\setFSauthor{Author One\textsuperscript{1,2*}\orcidA, Author Two\textsuperscript{3}\orcidB, Author Three\textsuperscript{3}\orcidC}
+\setFSauthor{Author One\textsuperscript{1,2*}\orcidA, Author Two\textsuperscript{3}\orcidB, Author Three\textsuperscript{3}}%\orcidC}
 
 \setFSaffil{
   \textsuperscript{1}Affiliation1, University1 , zip1 place1, country1;
@@ -74,24 +73,21 @@ article is an open access article distributed under the terms and conditions of 
 \twocolumn
 
 %\twocolumn[
-  \FSmaketitleandabstract{Here will be the abstract. The Abstract should provide a brief summary (not more than 250 words) of the study including the purpose, methods, results, and major conclusions. All biological and chemical names, and technical terms should conform to the most recent international nomenclature. Latin botanical and zoological names of Genera and species (e.g. \textit{Hylobius abietis L.}), words which are not originally English (e.g. \textit{in vitro}), and symbols expressing numerical values in the text and equations (e.g. $S.D.$, $S.E.$, $p$, $n$, $r$) should be typed in italics. If mathematical symbols have more than one letter, they should be italicized using \texttt{testit} environment: e.g. \textit{t-test}. The SI system, which includes the metric units should be used throughout. The \texttt{siunitx} package should be used for all numbers, units, ranges, and scientific notation in the manuscript to ensure consistency and correct SI formatting. Authors are encouraged to avoid typing units manually in math or text mode whenever possible. Use \texttt{unit{}} for units only, \texttt{qty{}} for a number together with its unit, and \texttt{qtyrange{}} for ranges. For example: \unit{\meter}, \qty{25}{\celsius}, \qty{12.5}{\milli\gram\per\liter}, \qtyrange{10}{20}{\meter\per\second}. Scientific notation should also be formatted with \texttt{siunitx}: e.g. \num{3.5e-4}. All abbreviations, nomenclature and symbols must be the same in the text and figures. The abstract should be self-contained and should not include references, figures, or tables.}
+\FSmaketitleandabstract{Here will be the abstract. The Abstract should provide a brief summary (not more than 250 words) of the study including the purpose, methods, results, and major conclusions. All biological and chemical names, and technical terms should conform to the most recent international nomenclature. Latin botanical and zoological names of Genera and species (e.g. \textit{Hylobius abietis L.}), words which are not originally English (e.g. \textit{in vitro}), and symbols expressing numerical values in the text and equations (e.g. $S.D.$, $S.E.$, $p$, $n$, $r$) should be typed in italics. If mathematical symbols have more than one letter, they should be italicized using \texttt{testit} environment: e.g. \textit{t-test}. The SI system, which includes the metric units should be used throughout. The \texttt{siunitx} package should be used for all numbers, units, ranges, and scientific notation in the manuscript to ensure consistency and correct SI formatting. Authors are encouraged to avoid typing units manually in math or text mode whenever possible. Use \texttt{unit{}} for units only, \texttt{qty{}} for a number together with its unit, and \texttt{qtyrange{}} for ranges. For example: \unit{\meter}, \qty{25}{\celsius}, \qty{12.5}{\milli\gram\per\liter}, \qtyrange{10}{20}{\meter\per\second}. Scientific notation should also be formatted with \texttt{siunitx}: e.g. \num{3.5e-4}. All abbreviations, nomenclature and symbols must be the same in the text and figures. The abstract should be self-contained and should not include references, figures, or tables.}
 %]
 
 % Two-column body begins here
 \section*{Introduction}
 
-
 %\blindtext[2]
 
 Here is the introduction. It should provide background information and context for the study, clearly state the research question or hypothesis, and explain the significance of the work. The introduction should be concise and focused, leading the reader to understand why the study was conducted and what it aims to achieve.
-
 
 %\blindtext[2]
 
 \subsection*{The structure of manuscript}
 
-The standard order in sections: Introduction, Material and Methods, Results, Discussion, Conclusions, Acknowledgements, References. 
-
+The standard order in sections: Introduction, Material and Methods, Results, Discussion, Conclusions, Acknowledgements, References.
 
 \subsection*{Citations}
 
@@ -102,16 +98,14 @@ Example of citations in the text. You can use \texttt{natbib} commands for diffe
 For tables, align numerical values using the S column type instead of manual spacing. For example:
 
 \begin{tabular}{l S S}
-\toprule
-Sample & {Temperature} & {Concentration} \\
-       & {\unit{\celsius}} & {\unit{\milli\gram\per\liter}} \\
-\midrule
-A      & 23.5  & 12.4 \\
-B      & 25.1  & 15.8 \\
-\bottomrule 
+  \toprule
+  Sample & {Temperature} & {Concentration} \\
+  & {\unit{\celsius}} & {\unit{\milli\gram\per\liter}} \\
+  \midrule
+  A      & 23.5  & 12.4 \\
+  B      & 25.1  & 15.8 \\
+  \bottomrule
 \end{tabular}
-
-
 
 Equations should be numbered and formatted using the \texttt{equation} environment. For example, here is an equation:
 
@@ -121,12 +115,11 @@ Equations should be numbered and formatted using the \texttt{equation} environme
   f(x) = \frac{\sin(x+2\pi)}{a}
 \end{equation}
 
-Authors should write unit symbols in upright font and leave spacing to siunitx, rather than inserting spaces manually. Thus, use: \qty{5}{\kilo\meter} instead of 5 km, and \qty{3.5e-4}{\milli\gram\per\liter} instead of 3.5e-4 mg/L.   
+Authors should write unit symbols in upright font and leave spacing to siunitx, rather than inserting spaces manually. Thus, use: \qty{5}{\kilo\meter} instead of 5 km, and \qty{3.5e-4}{\milli\gram\per\liter} instead of 3.5e-4 mg/L.
 
 \section*{Material and Methods}
 
 Here is the Material and Methods section. It should provide a detailed description of the materials, methods, and procedures used in the study, allowing other researchers to replicate the work if desired. This section should be clear and concise, with enough detail to understand how the research was conducted without including unnecessary information.
-
 
 Example of a Figure that is too wide for one column. It will be automatically placed on the next page and will span over the whole page width. The caption will be centered and will span the whole page width as well. The figure itself will be centered within the caption box, but it will not stretch to fill the entire width of the page. This is because the figure is designed to fit within a single column, and it will maintain its original size and aspect ratio. If you want the figure to stretch to fill the entire width of the page, you would need to use a different figure environment, such as \texttt{figure*}, which allows for wider figures that can span across both columns in a two-column layout.
 
@@ -150,7 +143,7 @@ Here is the Results section. It should present the findings of the study in a cl
   \caption{Example figure caption. with a lot of text so that we can see if the caption spans all the page width. It should as well have more than just one row of text to see the effect of wrapping.}
 \end{figure*}
 
-%\blindtext[2]
+\blindtext[2]
 
 Here we can to some \parencite{Baldocchi.gcb.12649} citations and some more \parencite{NoeSmear2015}.
 

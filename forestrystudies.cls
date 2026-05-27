@@ -3,7 +3,7 @@
 % Author/s: Steffen Noe, Emilio Mercuri
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{forestrystudies}[2026/04/01 Forestry Studies refined class]
+\ProvidesClass{forestrystudies}[2026/05/27 Forestry Studies refined class]
 \LoadClass[12pt, twoside]{article}
 
 % --------------------
@@ -59,7 +59,7 @@
 % Page layout and basic settings
 % --------------------
 \geometry{a4paper,left=20mm,right=20mm,top=10mm,bottom=40mm,includehead,includefoot}
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{15pt}
 \setlength{\parskip}{0.4\baselineskip}
 %\onehalfspacing
 \singlespacing
@@ -290,7 +290,6 @@
 %   \pagestyle{FSnormal}%
 % }
 
-
 % Full-width title/abstract block on page 1 inside a two-column document.
 % This does NOT force a page break after the block.
 % Usage in the .tex file:
@@ -328,10 +327,12 @@
 % --------------------
 % Section formatting
 % --------------------
-\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\section}{\normalfont\normalfont\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\itshape}{\thesubsection}{1em}{}
 \titlespacing*{\section}{0pt}{12pt}{6pt}
-\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\titlespacing*{\subsection}{0pt}{10pt}{-3pt}
+\titlespacing*{\subsubsection}{0pt}{10pt}{-3pt}
 
 % Captions
 \captionsetup{%
@@ -361,7 +362,21 @@
 % --------------------
 \RequirePackage[backend=biber,style=apa,maxcitenames=2]{biblatex}
 \addbibresource{\FS@bibresource} % default bibliography file
-%\addbibresource{references.bib}
+% \addbibresource{references.bib}
+
+% \AtBeginDocument{\renewcommand{\BOthers}{\emph{et al}\hbox{}}}
+
+\renewbibmacro*{name:andothers}{% Based on name:andothers from biblatex.def
+  \ifboolexpr{
+    test {\ifnumequal{\value{listcount}}{\value{liststop}}}
+    and
+    test \ifmorenames
+  }
+  {\ifnumgreater{\value{liststop}}{1}
+    {\finalandcomma}
+    {}%
+  \andothersdelim\bibstring[\emph]{andothers}}
+{}}
 
 \DeclareFieldFormat[article,incollection,unpublished]{title}{#1}%No quotes for article titles
 \DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} % Theses like book titles
