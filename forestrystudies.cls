@@ -3,8 +3,8 @@
 % Author/s: Steffen Noe, Emilio Mercuri
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{forestrystudies}[2026/05/27 Forestry Studies refined class]
-\LoadClass[12pt, twoside]{article}
+\ProvidesClass{forestrystudies}[2026/05/28 Forestry Studies refined class]
+\LoadClass[11pt, twoside]{article}
 
 % --------------------
 % Packages
@@ -64,7 +64,7 @@
 %\onehalfspacing
 \singlespacing
 \setlength{\columnsep}{20pt}
-\setlength{\footskip}{70pt}
+\setlength{\footskip}{10pt}
 
 % --------------------
 % User-settable strings and logo
