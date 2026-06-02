@@ -58,7 +58,7 @@
 % --------------------
 % Page layout and basic settings
 % --------------------
-\geometry{a4paper,left=20mm,right=20mm,top=10mm,bottom=40mm,includehead,includefoot}
+\geometry{a4paper,left=20mm,right=20mm,top=10mm,bottom=20mm,includehead,includefoot}
 \setlength{\parindent}{15pt}
 \setlength{\parskip}{0.4\baselineskip}
 %\onehalfspacing
@@ -161,12 +161,12 @@
       \fi
       \hspace{1.5mm}
       \begin{minipage}[t]{0.7\textwidth}%
-        \vspace{-8.5mm}%
+        \vspace{-8mm}%
         \scriptsize \FS@copyright
       \end{minipage}
       \begin{minipage}[t]{0.1\textwidth}%
         \parbox{\textwidth}{
-          \vspace{8.5mm}%
+          \vspace{8mm}%
           \flushright\rule{\textwidth}{0.8pt}
           \flushright\fontsize{8}{10}\selectfont\thepage
         }%
@@ -185,7 +185,7 @@
   \fancyfoot[LE]{
     \begin{minipage}[t]{0.1\textwidth}%
       \parbox{\textwidth}{
-        \vspace{30mm}%
+        \vspace{10mm}%
         \flushleft\rule{\textwidth}{0.8pt}
         \flushleft\fontsize{8}{10}\selectfont\thepage
       }%
@@ -194,7 +194,7 @@
   \fancyfoot[RO]{
     \begin{minipage}[t]{0.1\textwidth}%
       \parbox{\textwidth}{
-        \vspace{30mm}%
+        \vspace{10mm}%
         \flushright\rule{\textwidth}{0.8pt}
         \flushright\fontsize{8}{10}\selectfont\thepage
       }%
