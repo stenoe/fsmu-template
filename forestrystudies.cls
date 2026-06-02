@@ -3,7 +3,7 @@
 % Author/s: Steffen Noe, Emilio Mercuri
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{forestrystudies}[2026/05/28 Forestry Studies refined class]
+\ProvidesClass{forestrystudies}[2026/06/02 Forestry Studies refined class]
 \LoadClass[11pt, twoside]{article}
 
 % --------------------
