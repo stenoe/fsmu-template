@@ -1,0 +1,82 @@
+{
+  "name": "LuaLaTeX Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+   "containerEnv": {
+     "LANG": "en_US.UTF-8",
+     "LC_ALL": "en_US.UTF-8",
+     "LC_CTYPE": "en_US.UTF-8"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "bierner.markdown-mermaid",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "latex-workshop.latex.engine": "lualatex",
+        "latex-workshop.latex.tools": [
+          {
+            "name": "lualatex",
+            "command": "lualatex",
+            "args": [
+              "-interaction=nonstopmode",
+              "-synctex=1",
+              "-output-directory=%OUTDIR%",
+              "%DOC%"
+            ]
+          },
+          {
+            "name": "biber",
+            "command": "biber",
+            "args": ["%DOCFILE%"]
+          }
+          ],
+          "latex-workshop.latex.recipes": [
+            {
+              "name": "LuaLaTeX + Biber",
+              "tools": [
+                "lualatex",
+                "biber",
+                "lualatex",
+                "lualatex"
+              ]
+            }
+          ],
+          "latex-workshop.latex.clean.fileTypes": [
+            "*.aux",
+            "*.bbl",
+            "*.blg",
+            "*.idx",
+            "*.ind",
+            "*.lof",
+            "*.lot",
+            "*.out",
+            "*.toc",
+            "*.acn",
+            "*.acr",
+            "*.alg",
+            "*.glg",
+            "*.glo",
+            "*.gls",
+            "*.ist",
+            "*.fls",
+            "*.log",
+            "*.fdb_latexmk"
+          ],
+          "latex-workshop.latex.autoBuild.run": "never",
+          "latex-workshop.view.pdf.viewer": "tab",
+          "latex-workshop.view.pdf.zoom": "page-fit",
+          "editor.formatOnSave": true,
+          "files.associations": {
+            "*.tex": "latex",
+            "*.bib": "bibtex"
+          }
+        }
+      }
+    }
+  }
