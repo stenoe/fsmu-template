@@ -46,6 +46,9 @@ biber filename
 pdflatex filename.tex
 pdflatex filename.tex
 ```
+### Using the devcontainer
+
+If you have access to a Podman/Docker environmemt you can use the devcontainer (e.g., in VSCode) to use the class and preset Lualatex environment to produce yout document. See section [Devcontaioner overview](#Devcontaioner-overview)
 
 ## Basic Usage
 
@@ -252,6 +255,42 @@ The study was conducted in...
 - The DOI and copyright fields are automatically displayed on the first page
 - Logos should be in PNG format (vector graphics recommended for best quality)
 - Ensure all referenced files (logos, bibliography) are in the same directory as the main .tex file
+
+## Devcontaioner overview
+The `devcontainer.json` file defines a development environment optimized for **LaTeX** editing and compilation using **LuaLaTeX**. It is designed to be launched within VS Code and utilizes a Docker container to ensure a consistent environment across different machines.
+
+## Configuration Details
+
+### Build Settings
+- **Name**: `LuaLaTeX Dev Container`
+- **Build Context**: Uses the parent directory (`..`) and references a `Dockerfile` located in the `.devcontainer` folder.
+- **User**: Runs as `vscode` inside the container.
+
+### Environment Variables
+- **Locale**: Sets the environment variables `LANG`, `LC_ALL`, and `LC_CTYPE` to `en_US.UTF-8` to ensure proper character encoding for international text and LaTeX fonts.
+
+### VS Code Customization
+The container is pre-configured with the following extensions and settings:
+
+#### Extensions
+- **LaTeX Workshop**: Essential for LaTeX editing, compilation, and previewing.
+- **Markdown Mermaid**: Supports Mermaid.js diagrams in Markdown files.
+- **GitLens**: Enhances Git capabilities (blame, blame annotations, code insights).
+
+#### LaTeX Workshop Settings
+- **Engine**: Configured to use **LuaLaTeX** as the primary compiler.
+- **Tools**: Defined a compilation chain including:
+  - `lualatex`: Compiles the `.tex` file.
+  - `biber`: Processes the bibliography (`*.bib` file).
+- **Recipes**: Created a recipe named **"LuaLaTeX + Biber"** that executes the standard compilation loop (Run → Biber → Run → Run) to handle references correctly.
+- **Auto Build**: Set to `never` to prevent automatic compiles on save.
+- **PDF Viewer**: Opens the generated PDF in a VS Code tab rather than an external viewer.
+- **File Associations**: Maps `.tex` files to the LaTeX language mode and `.bib` files to BibTeX mode.
+
+#### Editor Settings
+- **Format on Save**: Automatically formats files when saved.
+- **Zoom**: Sets the PDF view to fit the page.
+- **Clean Files**: Configured to automatically clean auxiliary files (`.aux`, `.log`, etc.) during the recipe execution.
 
 ## License
 
