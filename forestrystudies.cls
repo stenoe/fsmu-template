@@ -3,7 +3,7 @@
 % Author/s: Steffen Noe, Emilio Mercuri
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{forestrystudies}[2026/06/02 Forestry Studies refined class]
+\ProvidesClass{forestrystudies}[2026/05/28 Forestry Studies refined class]
 \LoadClass[11pt, twoside]{article}
 
 % --------------------
@@ -60,7 +60,7 @@
 % --------------------
 \geometry{a4paper,left=20mm,right=20mm,top=10mm,bottom=20mm,includehead,includefoot}
 \setlength{\parindent}{15pt}
-\setlength{\parskip}{0.4\baselineskip}
+\setlength{\parskip}{0.01\baselineskip}
 %\onehalfspacing
 \singlespacing
 \setlength{\columnsep}{20pt}
@@ -330,9 +330,9 @@
 \titleformat{\section}{\normalfont\normalfont\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\itshape}{\thesubsection}{1em}{}
-\titlespacing*{\section}{0pt}{12pt}{6pt}
-\titlespacing*{\subsection}{0pt}{10pt}{-3pt}
-\titlespacing*{\subsubsection}{0pt}{10pt}{-3pt}
+\titlespacing*{\section}{2pt}{12pt}{3pt}
+\titlespacing*{\subsection}{0pt}{10pt}{3pt}
+\titlespacing*{\subsubsection}{0pt}{10pt}{3pt}
 
 % Captions
 \captionsetup{%
