@@ -225,78 +225,7 @@
   \endgroup
 }
 
-% % Public macro for one-column title + abstract block used inside \twocolumn[ ... ]
-% % Usage: \twocolumn[\FSmaketitleandabstract{<abstract text>}]
-% \newcommand{\FSmaketitleandabstract}[1]{%
-%   \thispagestyle{FSfirst}% apply first page style (logo + journal info)
-%   \begingroup
-%   %\centering
-%   \hfill % to ensure the minipage is left-aligned
-%   \begin{minipage}[t]{0.88\textwidth}%
-%     \vspace{3ex}%
-%     {\FS@subtitle \par}\vspace{3ex}%
-%     {\FS@titlefont \@title \par}\vspace{3ex}%
-%     % authors (authblk will have already formatted \@author)
-%     {\FS@authorfont \FS@author \par}\vspace{3ex}%
-%     % optional short citation line below authors (comment out or edit in document if undesired)
-%     {\FS@affilfont {\FS@citation}\par}\vspace{3ex}%
-%     % Abstract block: bold label + text
-%     \begin{minipage}{\textwidth}
-%       {\FS@abstractfont \textbf{Abstract.}\ #1 \par}
-%     \end{minipage}\par\vspace{3ex}%
-%     \begin{minipage}{\textwidth}
-%       {\FS@keywordfont \textbf{Key words:}\ \FS@keywords \par}
-%     \end{minipage}\par\vspace{3ex}%
-%     \begin{minipage}{\textwidth}
-%       {\FS@affilfont \textbf{Authors' addresses:}\ \FS@affil \par}
-%     \end{minipage}\par\vspace{5ex}%
-%   \end{minipage}%
-%   \endgroup
-%   \afterpage{
-%     \newgeometry{left=20mm,right=20mm,top=10mm,bottom=10mm,includehead,includefoot}
-%     \twocolumn[]
-%   }
-% }
-
-% % Public macro for full-width title/abstract front matter on page 1,
-% % then switch directly to normal two-column mode for the manuscript body.
-% % Usage in the .tex file:
-% % \FSmaketitleandabstract{<abstract text>}
-% \newcommand{\FSmaketitleandabstract}[1]{%
-%   \onecolumn
-%   \thispagestyle{FSfirst}%
-%   \begingroup
-%   \hfill
-%   \begin{minipage}[t]{0.88\textwidth}%
-%     \vspace{3ex}%
-%     {\FS@subtitle \par}\vspace{3ex}%
-%     {\FS@titlefont \@title \par}\vspace{3ex}%
-%     {\FS@authorfont \FS@author \par}\vspace{3ex}%
-%     {\FS@affilfont {\FS@citation}\par}\vspace{3ex}%
-%     \begin{minipage}{\textwidth}
-%       {\FS@abstractfont \textbf{Abstract.}\ #1 \par}
-%     \end{minipage}\par\vspace{3ex}%
-%     \begin{minipage}{\textwidth}
-%       {\FS@keywordfont \textbf{Key words:}\ \FS@keywords \par}
-%     \end{minipage}\par\vspace{3ex}%
-%     \begin{minipage}{\textwidth}
-%       {\FS@affilfont \textbf{Authors' addresses:}\ \FS@affil \par}
-%     \end{minipage}\par\vspace{5ex}%
-%   \end{minipage}%
-%   \par
-%   \endgroup
-%   \newgeometry{left=20mm,right=20mm,top=10mm,bottom=10mm,includehead,includefoot}%
-%   \twocolumn
-%   \pagestyle{FSnormal}%
-% }
-
-% Full-width title/abstract block on page 1 inside a two-column document.
-% This does NOT force a page break after the block.
-% Usage in the .tex file:
-% \begin{document}
-% \twocolumn
-% \FSmaketitleandabstract{<abstract text>}
-% \section*{Introduction}
+% Custom title and abstract block for the first page, using the strip environment to allow spanning both columns if needed. The argument is the abstract text.
 \newcommand{\FSmaketitleandabstract}[1]{%
   \begin{strip}
     \thispagestyle{FSfirst}%
@@ -330,7 +259,7 @@
 \titleformat{\section}{\normalfont\normalfont\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\itshape}{\thesubsection}{1em}{}
-\titlespacing*{\section}{2pt}{12pt}{3pt}
+\titlespacing*{\section}{0pt}{12pt}{3pt}
 \titlespacing*{\subsection}{0pt}{10pt}{3pt}
 \titlespacing*{\subsubsection}{0pt}{10pt}{3pt}
 
