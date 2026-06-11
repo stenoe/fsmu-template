@@ -3,7 +3,7 @@
 % Author/s: Steffen Noe, Emilio Mercuri
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{forestrystudies}[2026/06/08 Forestry Studies refined class]
+\ProvidesClass{forestrystudies}[2026/06/11 Forestry Studies refined class]
 \LoadClass[11pt, twoside]{article}
 
 % --------------------
@@ -153,6 +153,7 @@
   \fancyhead[R]{}%
   \fancyfoot[C]{%
     \begin{minipage}[t]{\textwidth}%
+      \vspace{-5.5mm}%
       \rule{\textwidth}{0.4pt}
       \vspace{1.5mm}%
       \scriptsize DOI: \FS@doi \\%
